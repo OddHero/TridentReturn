@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "1.16.4-${version}"
+version = "${mc_version}-${version}"
 group = 'art.rehra.tridentreturn' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'TridentReturn'
 
@@ -134,7 +134,7 @@ dependencies {
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
-jar {
+jar {1
     manifest {
         attributes([
             "Specification-Title": "TridentReturn",
